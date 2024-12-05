@@ -1,0 +1,40 @@
+An Agent-Based Model of Metabolic Signaling Oscillations in Bacillus subtilis
+Biofilms
+
+Authors: Obadiah Mulder, Maya Peters Kostman, Abdulrahmen Almodaimegh, Michael
+Edge, and Joseph Larkin
+
+For questions please contact Obadiah Mulder at omulder@usc.edu
+
+Code was run in RStudio 2023.03.0+386 "Cherry Blossom" Release with
+R version 4.3.2 (2023-10-31) -- "Eye Holes"
+
+### Files
+
+CompleteSourceScript.R - Running this file will load in all packages and run
+  code to produce the data in our paper
+
+BreakScript.R - Sourced in CompleteSourceScript.R. Called during loops. This
+  is a blank script, intended to be used for diagnostics and to stop
+  CompleteSourceScript.R safely.
+
+Functions.R - Sourced in CompleteSourceScript.R. All of the functions required
+  to run and analyze these simulations.
+
+Master_Model_SourceOnly.R - Sourced in CompleteSourceScript.R. This script
+  contains the code to perform simulations. Must be run by sourcing
+  CompleteSourceScript.R.
+
+Packages.R - Sourced in CompleteSourceScript.R. Loads all of the required
+  packages. Sets library to the Packages directory.
+
+### Directories
+
+Output - This contains several empty directies. Where all of the data generated
+  by running CompleteSourceScript.R is stored.
+
+Packages - Contains all of the source code for the packages used in this code.
+
+Plot_Code - Code to generate the plots and other summary data reported in this
+  paper. Scripts in that folder do not run independently. Initialization.R must
+  be run before any of the plotting code will work.
