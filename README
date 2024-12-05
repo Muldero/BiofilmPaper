@@ -9,6 +9,15 @@ For questions please contact Obadiah Mulder at omulder@usc.edu
 Code was run in RStudio 2023.03.0+386 "Cherry Blossom" Release with
 R version 4.3.2 (2023-10-31) -- "Eye Holes"
 
+### Before running
+
+This code requires a folder tree to store return data. There must be a directory 
+  "Output" in the main directory, and it has to contain "Other", "POST_ATR", 
+  "POST_TRACK", "SIG_SAMPLE_TRAJ", and "SIG_TRACKER". The "Plot_Code" directory 
+  needs a "Plot_Data" directory and a "Final_Plots" directory which in turn must
+  contain an "Images" directory. I apologize for the inconvinience, GitHub does
+  not supoport empty folders.
+
 ### Files
 
 CompleteSourceScript.R - Running this file will load in all packages and run
