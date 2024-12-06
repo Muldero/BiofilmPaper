@@ -21,16 +21,12 @@ list_of_packages <- c(
   "ggtext",
   "gridExtra", # arrange plots in ggplot
   "data.table"
-  # "gganimate", # create gifs
-  # "extrafont" # use arial in plots
 )
 
 new_packages <- list_of_packages[!(list_of_packages %in%
-                                     installed.packages()[,"Package"])]
+                                     installed.packages())]
 
-if (length(new_packages) > 0) {install.packages(new_packages, lib = "Packages")}
-
-.libPaths("Packages")
+if (length(new_packages) > 0) {install.packages(new_packages)}
 
 lapply(list_of_packages, library, character.only = TRUE)
 
