@@ -35,6 +35,10 @@ This code requires a folder tree to store return data. There must be a directory
   contain an "Images" directory. I apologize for the inconvinience, GitHub does
   not supoport empty folders.
 
+RequiredPackages.csv contains a list of all the requisite pacakges with version 
+  numbers. Newest versions of packages are automatically installed and loaded,
+  but if this causes errors then the appropriate version may be required. If
+  not accessible through CRAN they are available on request.
 
 ### Files ######################################################################
 
